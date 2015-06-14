@@ -18,4 +18,8 @@ import ItemList from './components/itemList';
 
 var items = ['item 1', 'item 2', 'item 3'];
 
-React.render(<ItemList items={items} />, document.body);
+import Entity from './components/entity';
+
+
+React.render(<Entity />, document.body);
+//React.render(<ItemList items={items} />, document.body);
