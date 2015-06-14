@@ -30,7 +30,7 @@ gulp.task('clean', function (map) {
 gulp.task('serve', function () {
 
     browserSync({
-        files: ['target/*.js', 'target/*.html', 'target/*.css'],
+        files: ['target/*.js', 'target/*.css'],
         server: {
             baseDir: "./" // Change this to your web root dir
         }
@@ -78,7 +78,7 @@ gulp.task('webpack:dev', function (callback) {
 });
 
 gulp.task('watch', function () {
-    gulp.watch('src/**/*.js', ['lint', 'build']);
+    gulp.watch('src/**/*.js', ['lint', 'webpack:dev']);
     gulp.watch('sass/**/*.scss', ['sass']);
 });
 

@@ -13,9 +13,10 @@
         "generators": false,
         "objectLiteralComputedProperties": true,
         "objectLiteralShorthandMethods": true,
-        "objectLiteralShorthandProperties": true
+        "objectLiteralShorthandProperties": true,
+        "jsx": true
     },
-
+    "parser": "babel-eslint",
     "rules": {
         "strict": 0,
         "no-underscore-dangle": 0,
@@ -36,13 +37,13 @@
         "no-unreachable": 0,
         "no-process-exit": 0,
         "no-console": 0,
+        "no-unused-vars": 0,
         "quotes": [
             1,
             "single",
             "avoid-escape"
         ],
-
-        "vars-on-top": 1,
+        "vars-on-top": 0,
         "curly": 1,
         "eqeqeq": 1,
     },
