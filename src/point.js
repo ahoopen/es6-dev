@@ -1,11 +1,35 @@
-class Point {
-    constructor(x, y) {
-        this.x = x;
-        this.y = y;
+import React from 'react';
+
+class Point extends React.Component {
+
+    static propTypes = {
+        initialCount: React.PropTypes.number
+    };
+
+    static defaultProps = {
+        initialCount: 0
+    };
+
+    state = {
+        count: this.props.initialCount
+    };
+
+    myProp = {someValue: 42};
+
+    constructor(props) {
+        super(props);
     }
 
-    toString() {
-        return '(' + this.x + ',' + this.y + ')';
+    tick() {
+        this.setState({count: this.state.count + 1});
+    }
+
+    render() {
+        return (
+            <div onClick={this.tick.bind(this)}>
+                Clicks: { this.state.count}
+            </div>
+        );
     }
 }
 export default Point;
