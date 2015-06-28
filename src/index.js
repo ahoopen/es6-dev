@@ -23,7 +23,7 @@ var items = ['item 1', 'item 2', 'item 3'];
 
 import Entity from './components/entity';
 
-React.render(<Point />, document.body);
+React.render(<Point initialCount="10" />, document.body);
 
 //React.render(<Entity />, document.body);
 //React.render(<ItemList items={items} />, document.body);

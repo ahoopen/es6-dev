@@ -2,9 +2,9 @@ import React from 'react';
 
 class Point extends React.Component {
 
-    static propTypes = {
-        initialCount: React.PropTypes.number
-    };
+    //static propTypes = {
+    //    initialCount: React.PropTypes.number
+    //};
 
     static defaultProps = {
         initialCount: 0
