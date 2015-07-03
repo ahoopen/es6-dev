@@ -1,3 +1,14 @@
+/**
+ *
+ *  Usage:
+ *
+ *   var transition = new Transition();
+ *   transition.animate( $('.element'), 'css-animation-class').
+ *       then(function () {
+ *           console.log('animation complete!!');
+ *       });
+ *
+ */
 class transition {
 
     /**
@@ -64,7 +75,7 @@ class transition {
      *
      * @param resolve
      */
-    resolvePromise(resolve) {
+    resolvePromise() {
         this.transitionEventListeners(true);
         $(this.element).removeClass(this.className);
         this.resolve();
